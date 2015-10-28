@@ -3,7 +3,7 @@
   "exec":
     "endpoint": "NewSpring/norma-exec#feature-execSync"
     "commands": [
-      "mkdir ../Projects/Rock",
+      "echo Starting To Clone Rock & It's Dependencies.  This may take some time.",
       "git clone https://github.com/NewSpring/Rock.git ../Projects/Rock/Rock",
       "git clone https://github.com/NewSpring/rock-spiritual-gifts.git ../Projects/Rock/com.centralaz.SpiritualGifts",
       "git clone https://github.com/NewSpring/rock-attended-checkin.git ../Projects/Rock/cc.newspring.AttendedCheckIn", 
@@ -13,3 +13,8 @@
       "git clone https://github.com/NewSpring/rock-cybersource.git ../Projects/Rock/cc.newspring.CyberSource"
     ]
     "verbose": "true"
+    "order": "pre"
+  "copy":
+    "src": "./web.connectionstrings"
+    "dest": "../Projects/Rock/Rock/RockWeb"
+    "ext": ["config"]
