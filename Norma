@@ -3,18 +3,18 @@
   "exec":
     "endpoint": "NewSpring/norma-exec#feature-execSync"
     "commands": [
-      "echo starting to clone rock and rock plugins, this may take some time",
-      "git clone https://github.com/NewSpring/Rock.git ../Projects/Rock/Rock",
-      "git clone https://github.com/NewSpring/rock-spiritual-gifts.git ../Projects/Rock/com.centralaz.SpiritualGifts",
-      "git clone https://github.com/NewSpring/rock-attended-checkin.git ../Projects/Rock/cc.newspring.AttendedCheckIn", 
-      "git clone https://github.com/NewSpring/rock-themes.git ../Projects/Rock/cc.newspring.Themes"
-      "git clone https://github.com/NewSpring/rock-apollos.git ../Projects/Rock/cc.newspring.Apollos"
-      "git clone https://github.com/NewSpring/rock-workflows.git ../Projects/Rock/cc.newspring.Workflows"
-      "git clone https://github.com/NewSpring/rock-cybersource.git ../Projects/Rock/cc.newspring.CyberSource"
+      "echo starting to clone rock and rock plugins..this may take some time",
+      "git clone https://github.com/NewSpring/Rock.git C:/projects/Rock",
+      "git clone https://github.com/NewSpring/rock-spiritual-gifts.git C:/projects/com.centralaz.SpiritualGifts",
+      "git clone https://github.com/NewSpring/rock-attended-checkin.git C:/projects/cc.newspring.AttendedCheckIn", 
+      "git clone https://github.com/NewSpring/rock-themes.git C:/projects/cc.newspring.Themes"
+      "git clone https://github.com/NewSpring/rock-apollos.git C:/projects/cc.newspring.Apollos"
+      "git clone https://github.com/NewSpring/rock-workflows.git C:/projects/cc.newspring.Workflows"
+      "git clone https://github.com/NewSpring/rock-cybersource.git C:/projects/cc.newspring.CyberSource"
     ]
     "verbose": "true"
     "order": "pre"
   "copy":
     "src": "./web.connectionstrings"
-    "dest": "../Projects/Rock/Rock/RockWeb"
+    "dest": "../projects/Rock/RockWeb"
     "ext": ["config"]
