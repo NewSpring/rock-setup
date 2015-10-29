@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "norma-copy": "^0.4.6",
     "norma-exec": "git://github.com/newspring/norma-exec.git#feature-execSync"
   }
 }

@@ -3,7 +3,7 @@
   "exec":
     "endpoint": "NewSpring/norma-exec#feature-execSync"
     "commands": [
-      "echo Starting To Clone Rock & It's Dependencies.  This may take some time.",
+      "echo starting to clone rock and rock plugins, this may take some time",
       "git clone https://github.com/NewSpring/Rock.git ../Projects/Rock/Rock",
       "git clone https://github.com/NewSpring/rock-spiritual-gifts.git ../Projects/Rock/com.centralaz.SpiritualGifts",
       "git clone https://github.com/NewSpring/rock-attended-checkin.git ../Projects/Rock/cc.newspring.AttendedCheckIn", 
