@@ -1,45 +1,55 @@
 #NewSpring Rock Local Environment Setup
 
-This setup assumes that you have a Project directory directly undernath your user folder.  If you don't enter this command in terminal and then continue on.
-
-```
-mkdir ~/Projects
-```
-
 How to setup your Rock Environment:
 
-### On your mac open terminal and enter
-  
-  ```
-  cd ~ &&
-  git clone https://github.com/NewSpring/norma-rock-setup.git rock-setup &&
-  cd rock-setup &&
-  norma build
-  ```
-  
-### Setup Folder Sharing With Your VM
+##Clone The Appropriate Repo's
 
-  1. Open VMWare Fusion
-  2. With the correct VM highlighted click Settings
-  3. Click Sharing under System Settings
-  4. Make Sure that Enable Shared Folders is checked
-  5. Click the plus button
-  6. Choose the Projects/Rock folder
-  7. Click 
-  8. Close the settings modal
-  
-### Start Your VM
+###Using Command Prompt
 
-### Setup A Shortcut To The Rock Project
+Norma is not required to get your environment setup, it just automates the cloning and copying of the files.
 
-  1. Click on the VMWare Shared Folder on the Desktop
-  2. Browse to the core folder inside of Rock
-  3. Right Click on Rock.sln
-  4. Choose Send to > Desktop (create shortcut)
-  
-### Click on the Rock Shortcut and open the project
+To setup not using norma paste this into command prompt
 
-  (you may get a warning about unsafe files, you can uncheck the box, and click ok)
+```
+git clone https://github.com/NewSpring/Rock.git C:/projects/Rock && git clone https://github.com/NewSpring/rock-spiritual-gifts.git C:/projects/com.centralaz.SpiritualGifts && git clone https://github.com/NewSpring/rock-attended-checkin.git C:/projects/cc.newspring.AttendedCheckIn && git clone https://github.com/NewSpring/rock-themes.git C:/projects/cc.newspring.Themes && git clone https://github.com/NewSpring/rock-apollos.git C:/projects/cc.newspring.Apollos && git clone https://github.com/NewSpring/rock-workflows.git C:/projects/cc.newspring.Workflows && git clone https://github.com/NewSpring/rock-cybersource.git C:/projects/cc.newspring.CyberSource
+```
+
+Once this is completed then create a web.connectionstrings.config file in the Rock/RockWeb folder containing
+
+```
+<?xml version="1.0"?>
+<connectionStrings>
+    <add name="RockContext" connectionString="Server=(localdb)\Projectsv12; Initial Catalog=Rock;
+    Integrated Security=true; MultipleActiveResultSets=true" providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
+
+###Using Norma
+
+####Install Norma
+
+Norma depends on NodeJs, if it is not installed on your system visit [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+To install Norma paste this in your command window
+
+```
+cd \ && npm i -g normajs
+```
+
+#### Copy This Repo & Build Rock
+
+```
+cd \ && git clone https://github.com/NewSpring/rock-setup.git && cd rock-setup && npm i && norma build
+```
+
+##Setup Rock
+
+### Setup A Shortcut To The Rock Project & Open Rock
+
+  1. Browse to C:\projects\Rock
+  2. Right Click on Rock.sln
+  3. Choose Send to > Desktop (create shortcut)
+  4. Open Rock using the newly created shortcut
   
 ### Add The Rock Plugins
 
