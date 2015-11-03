@@ -11,7 +11,13 @@ Norma is not required to get your environment setup, it just automates the cloni
 To setup not using norma paste this into command prompt
 
 ```
-git clone https://github.com/NewSpring/Rock.git C:/projects/Rock && git clone https://github.com/NewSpring/rock-spiritual-gifts.git C:/projects/com.centralaz.SpiritualGifts && git clone https://github.com/NewSpring/rock-attended-checkin.git C:/projects/cc.newspring.AttendedCheckIn && git clone https://github.com/NewSpring/rock-themes.git C:/projects/cc.newspring.Themes && git clone https://github.com/NewSpring/rock-apollos.git C:/projects/cc.newspring.Apollos && git clone https://github.com/NewSpring/rock-workflows.git C:/projects/cc.newspring.Workflows && git clone https://github.com/NewSpring/rock-cybersource.git C:/projects/cc.newspring.CyberSource
+git clone https://github.com/NewSpring/Rock.git C:/projects/rock && ^
+git clone https://github.com/NewSpring/rock-spiritual-gifts.git C:/projects/rock-spiritual-gifts && ^
+git clone https://github.com/NewSpring/rock-attended-checkin.git C:/projects/rock-attended-checkin && ^
+git clone https://github.com/NewSpring/rock-themes.git C:/projects/rock-themes && ^
+git clone https://github.com/NewSpring/rock-apollos.git C:/projects/rock-apollos && ^
+git clone https://github.com/NewSpring/rock-workflows.git C:/projects/rock-workflows && ^
+git clone https://github.com/NewSpring/rock-cybersource.git C:/projects/rock-cybersource
 ```
 
 Once this is completed then create a web.connectionstrings.config file in the Rock/RockWeb folder containing
@@ -39,26 +45,28 @@ cd \ && npm i -g normajs
 #### Copy This Repo & Build Rock
 
 ```
-cd \ && git clone https://github.com/NewSpring/rock-setup.git && cd rock-setup && npm i && norma build
+git clone https://github.com/NewSpring/rock-setup.git C:/rock-setup && ^
+cd \rock-setup && ^
+npm i && ^
+norma build
 ```
 
 ##Setup Rock
 
 ### Setup A Shortcut To The Rock Project & Open Rock
 
-  1. Browse to C:\projects\Rock
+  1. Browse to C:\projects\rock
   2. Right Click on Rock.sln
   3. Choose Send to > Desktop (create shortcut)
   4. Open Rock using the newly created shortcut
   
-### Add The Rock Plugins
-
-  1. Click File in the Menu Bar
-  2. Select Add > Existing Project
-  3. Repeat until all necessary plugins are added
-  
 ### Set RockWeb As The Startup Project
 
   1. Right Click on the RockWeb folder in Visual Studio and choose Set As Startup Project
+
+### Run The Update Command
+
+  1. Click on Package Manager Console
+  2. In the dialog box type update and press enter
 
 ## Eat, Drink, and Write Code
