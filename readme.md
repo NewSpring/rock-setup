@@ -69,4 +69,14 @@ norma build
   1. Click on Package Manager Console
   2. In the dialog box type update and press enter
 
+### Common Issues 
+
+1. Issues with Rock-Bookshelf private keys
+
+  <i>If you have issues building, check that the rock-bookshelf repo properly cloned into ```Rock/RockWeb/.remote/```.  If it did not properly clone, go ahead and manually clone it into that directory.</i>
+
+2. Issues with the "update" command within PMC
+
+  <i>Ensure that all Nuget packages are installed correctly.  You may need to uninstall and reinstall some of them.  Also restarting visual studio may help.</i>
+
 ## Eat, Drink, and Write Code
