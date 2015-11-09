@@ -73,7 +73,7 @@ norma build
 
 1. Issues with Rock-Bookshelf private keys
 
-  <i>If you have issues building, check that the rock-bookshelf repo properly cloned into ```Rock/RockWeb/.remote/```.  If it did not properly clone, go ahead and manually clone it into that directory.</i>
+  <i>If you have issues building, check that the rock-bookshelf repo properly cloned into ```Rock/.remote/```.  If it did not properly clone, go ahead and manually clone it into that directory.</i>
 
 2. Issues with the "update" command within PMC
 
